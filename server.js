@@ -83,7 +83,7 @@ app.post(['/v1/chat/completions', '/chat/completions'], async (req, res) => {
       if (!nimModel) {
         const modelLower = model.toLowerCase();
         if (modelLower.includes('gpt-4') || modelLower.includes('claude-opus') || modelLower.includes('405b')) {
-          nimModel = 'deepseek-ai/deepseek-r1-distill-llama-8b;
+          nimModel = 'deepseek-ai/deepseek-r1-distill-llama-8b';
         } else if (modelLower.includes('claude') || modelLower.includes('gemini') || modelLower.includes('70b')) {
           nimModel = 'deepseek-ai/deepseek-r1-distill-llama-8b';
         } else {
